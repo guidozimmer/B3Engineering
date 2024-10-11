@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin:0;
+            background:grey;  
+        }
+
+        section{
+            position:relative;
+            width:100vw;
+            height:100vh;
+            background-color:grey;
+            border-bottom:1px solid black;
+        }
+
+        #hero{
+            background-color:green;
+        }
+        #textWrap{
+            position:absolute;
+            top:50%;
+            left:50%;
+            width: 420px
+        }
+
+        h2{
+            font-family:sans-serif;
+            color:#9e9e9e;
+            margin: 0;
+            line-height: 1.2;
+            visibility:hidden;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+<div id="pageWrap">
+    <section id="hero">
+      <div id="textWrap">
+        <h2>The page is pinned ...</h2>
+        <h2>as long as the animation is running.</h2>
+      </div>
+    </section>
+  
+    <section></section>
+  
+    <section></section>
+  
+  </div>
+</body>
+
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
+<script src="https://assets.codepen.io/16327/GSDevTools3.min.js"></script>
+
+
+<script>
+    
+
+
+
+
+
+    var hero = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#pageWrap",
+        pin:true,
+        start: "top top",
+        end: "+=3000",
+        scrub:true,
+    }
+    })
+    .to('#textWrap h2',{autoAlpha:1, duration:1, stagger:1})
+
+</script>
+
+</html>

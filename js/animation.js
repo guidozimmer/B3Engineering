@@ -1,18 +1,18 @@
-//learn how this was made at https://www.youtube.com/watch?v=ersN5fk8py0 
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin, GSDevTools);
 
-gsap.defaults({ease: "none"});
+gsap.defaults({ ease: "none" });
 
-
+// Main Timeline with Corrected Syntax
 const main = gsap.timeline({
   scrollTrigger: {
-    trigger: "#introSection",
-    scrub: true,
+    trigger: "#headingWrap",
+    pin:true,
     start: "top center",
-    end: "bottom center"
+    end: "+=1000",
+    scrub:true,
   }
 })
+.to("#heading", {autoAlpha:1, duration:1, stagger:1})
 
-
-
-GSDevTools.create({animation:main})
+// Create GSDevTools for Debugging
+GSDevTools.create({ animation: main });
