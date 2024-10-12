@@ -9,9 +9,9 @@
     top: 50px;
     position: relative;
     height: 280vh;
-    background-color: #333;
     justify-content: center;
     text-align: center;
+    /*background-color: #272525;*/
 }
 
 
@@ -23,13 +23,15 @@
 
 
 #heading {
-    font-size: 10rem;
-    color: white;
-    transform: translateX(100vw);
-
+    width: 100vw;
+    z-index: 10;
+    opacity: 0;
 }
 
-.test {
-    height: 100vh;
-    background-color: black;
+#backgroundImg {
+    position: absolute;
+    background-image:url(../img/backgroundImg.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100vw;
 }

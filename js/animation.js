@@ -1,30 +1,52 @@
 document.addEventListener("DOMContentLoaded", function() {
-
     const heading = document.getElementById('heading');
-
-    // Set the initial position of the heading off-screen (100vw to the right)
-    heading.style.transform = `translateX(100vw)`;
+    const backgroundImg = document.getElementById('backgroundImg');
 
     // Initialize ScrollMagic Controller
     var controller = new ScrollMagic.Controller();
 
-    // Create ScrollMagic Scene to Pin #headingWrap
-    var scene = new ScrollMagic.Scene({
-        triggerElement: "#introSection",  // Element that triggers the pinning
-        triggerHook: 0.5,                 // Start pinning when #introSection reaches 50% of the viewport
-        duration: "200%"                  // How long the pinning lasts
+    // Create ScrollMagic Scene to Pin #heading
+    var headingScene = new ScrollMagic.Scene({
+        triggerElement: "body",
+        triggerHook: 0,
+        duration: "100%", // Set duration to cover both animations (fly-in and zoom with fade-out)
     })
-    .setPin("#headingWrap")              // Pin the #headingWrap element
-    .addTo(controller);                  // Add scene to the ScrollMagic controller
+    .setPin("#heading")
+    .addTo(controller);
 
-    // Use ScrollMagic progress to animate the heading
-    scene.on("progress", function(event) {
-        // Get the progress of the scene (between 0 and 1)
+    // Create ScrollMagic Scene to Pin #backgroundImg
+    var backgroundScene = new ScrollMagic.Scene({
+        triggerElement: "body",
+        triggerHook: 0,
+        duration: "100%",
+    })
+    .setPin("#backgroundImg")
+    .addTo(controller);
+
+    // Use ScrollMagic progress to animate the heading and background image
+    headingScene.on("progress", function(event) {
         const scrollPercentage = event.progress;
 
-        // Set the horizontal translation based on scroll progress
-        // Starts from 100vw and moves to 0 (into view)
-        const maxHorizontalDistance = -100 * window.innerWidth / 100; // -100vw in pixels
-        heading.style.transform = `translateX(${100 * (1 - scrollPercentage)}vw)`;
+        // Phase 1: Fly-in effect (first 50% of progress)
+        if (scrollPercentage < 0.5) {
+            const translateXValue = 100 * (1 - (scrollPercentage * 2)); // From 100vw to 0
+            heading.style.transform = `translateX(${translateXValue}vw)`;
+            backgroundImg.style.transform = `translateX(${translateXValue}vw)`;
+        }
+
+        // Phase 2: Zoom effect with fade-out (after 50% of progress)
+        else {
+            const scaleProgress = (scrollPercentage - 0.5) * 2; // Normalize to range from 0 to 1
+            const scaleValue = 1 + (150 * scaleProgress); // Scale from 1 to 5
+            const translateYValue = 130 * scaleProgress; // Translate Y from 0 to 130px
+
+            // Apply scale and translate transformations
+            heading.style.transform = `scale(${scaleValue}) translateY(${translateYValue}px)`;
+
+            const fadeOutOpacity = 1 - Math.pow(scaleProgress, 2); // Ease-out effect
+            //heading.style.opacity = fadeOutOpacity;
+
+            console.log("Scale: " + scaleValue + ", Opacity: " + fadeOutOpacity);
+        }
     });
 });
