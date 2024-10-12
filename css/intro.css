@@ -1,34 +1,35 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
+
 
 #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
     background-color: #222;
     color: #fff;
-    z-index: 10;
 }
 
 #introSection {
+    top: 50px;
     position: relative;
-    height: 300vh;
+    height: 280vh;
     background-color: #333;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#headingWrap {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-
 #heading {
-    position: absolute;
-    font-size: 4rem;
+    font-size: 10rem;
     color: white;
-    visibility:hidden;
+    transform: translateX(100vw);
 
 }
 
+.test {
+    height: 100vh;
+    background-color: black;
+}
