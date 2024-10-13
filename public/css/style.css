@@ -2,22 +2,24 @@
 
 @font-face {
     font-family: "Acumin-Regular";
-    src: url("/AcuminPro/Acumin Pro Book.otf");
+    src: url("../../AcuminPro/AcuminPro/Acumin Pro Book.otf");
+
+    
 }
 
 @font-face {
     font-family: "Acumin-Black";
-    src: url("/AcuminPro/Acumin Pro Black.otf");
+    src: url("../../AcuminPro/Acumin Pro Black.otf");
 }
 
 @font-face {
     font-family: "Acumin-Bold";
-    src: url("/AcuminPro/Acumin Pro Bold.otf");
+    src: url("../../AcuminPro/Acumin Pro Bold.otf");
 }
 
 @font-face {
     font-family: "Acumin-Light";
-    src: url("/AcuminPro/Acumin Pro ExtraLight.otf");
+    src: url("../../AcuminPro/Acumin Pro ExtraLight.otf");
 }
 
 
