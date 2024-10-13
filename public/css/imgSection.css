@@ -1,0 +1,27 @@
+#imgSection {
+    height: auto;
+    margin-top: 300px;
+
+    display: grid;
+    grid-template-rows: repeat(4, 60vh);
+    grid-template-columns: 50vw 50vw;
+    row-gap: 100px;
+}
+
+#imgSection > img {
+    height: 60vh;
+}
+
+.imgSquare {
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+
+.imgSquare > h1, h3 {
+    font-family: Acumin-Light;
+}
+
+.imgSquare > h3 {
+    margin-top: 50px;
+}

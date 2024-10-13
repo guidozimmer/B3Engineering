@@ -1,0 +1,31 @@
+
+
+@font-face {
+    font-family: "Acumin-Regular";
+    src: url("/AcuminPro/Acumin Pro Book.otf");
+}
+
+@font-face {
+    font-family: "Acumin-Black";
+    src: url("/AcuminPro/Acumin Pro Black.otf");
+}
+
+@font-face {
+    font-family: "Acumin-Bold";
+    src: url("/AcuminPro/Acumin Pro Bold.otf");
+}
+
+@font-face {
+    font-family: "Acumin-Light";
+    src: url("/AcuminPro/Acumin Pro ExtraLight.otf");
+}
+
+
+
+
+html, body {
+    background-color: rgb(255, 255, 255) !important;
+    height: 5000px;
+    overflow-x: hidden;
+}
+

@@ -1,0 +1,25 @@
+
+
+#navbar {
+    background-color: #222;
+    color: #fff;
+}
+
+#intro {
+    margin-top: 90px;
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+#intro > h1 {
+    font-size: 5vw;
+    padding: 300px;
+    color: white;
+}
+
+
+.navbar-brand {
+    margin: auto 40px;
+}

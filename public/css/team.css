@@ -1,0 +1,37 @@
+
+#team {
+    margin-top: 400px;
+
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    grid-template-columns: 80vw;
+    row-gap: 100px;
+
+    justify-items: center; /* Horizontally centers content inside each cell */
+    margin: auto 10vw;
+}   
+
+.member {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 1fr;
+}
+
+.member > img {
+    grid-column: 1;
+    height: 300px;
+}
+
+.member > h1 {
+    grid-column: 2;
+} 
+
+.member > h3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#team > hr {
+    margin-top: 50px;
+    width: 80vw;
+}
