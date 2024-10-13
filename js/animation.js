@@ -1,52 +1,35 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const heading = document.getElementById('heading');
-    const backgroundImg = document.getElementById('backgroundImg');
+window.onload = function () {
+    // Initialize Locomotive Scroll after all content has loaded
+    const scrollContainer = document.querySelector('[data-scroll-container]');
 
-    // Initialize ScrollMagic Controller
-    var controller = new ScrollMagic.Controller();
+    if (scrollContainer) {
+        const scroll = new LocomotiveScroll({
+            el: scrollContainer,
+            smooth: true
+        });
 
-    // Create ScrollMagic Scene to Pin #heading
-    var headingScene = new ScrollMagic.Scene({
-        triggerElement: "body",
-        triggerHook: 0,
-        duration: "100%", // Set duration to cover both animations (fly-in and zoom with fade-out)
-    })
-    .setPin("#heading")
-    .addTo(controller);
+        const heading = document.getElementById('heading');
 
-    // Create ScrollMagic Scene to Pin #backgroundImg
-    var backgroundScene = new ScrollMagic.Scene({
-        triggerElement: "body",
-        triggerHook: 0,
-        duration: "100%",
-    })
-    .setPin("#backgroundImg")
-    .addTo(controller);
+        // Listen to Locomotive Scroll events
+        scroll.on('scroll', (args) => {
+            // Check if we are in the section that contains #introSection
+            console.log(args);
 
-    // Use ScrollMagic progress to animate the heading and background image
-    headingScene.on("progress", function(event) {
-        const scrollPercentage = event.progress;
+            
+            if (args.currentElements['introSection']) {
+                const progress = args.currentElements['introSection'].progress; // Get progress (0 to 1)
 
-        // Phase 1: Fly-in effect (first 50% of progress)
-        if (scrollPercentage < 0.5) {
-            const translateXValue = 100 * (1 - (scrollPercentage * 2)); // From 100vw to 0
-            heading.style.transform = `translateX(${translateXValue}vw)`;
-            backgroundImg.style.transform = `translateX(${translateXValue}vw)`;
-        }
+                // Adjust the left position of the image based on scroll progress
+                const leftValue = (1 - progress) * 100; // From 100vw to 0vw
+                heading.style.left = `${leftValue}vw`;
 
-        // Phase 2: Zoom effect with fade-out (after 50% of progress)
-        else {
-            const scaleProgress = (scrollPercentage - 0.5) * 2; // Normalize to range from 0 to 1
-            const scaleValue = 1 + (150 * scaleProgress); // Scale from 1 to 5
-            const translateYValue = 130 * scaleProgress; // Translate Y from 0 to 130px
+                // Make sure the image fades in as it moves in
+                heading.style.opacity = progress;
+                console.log("scrolling");
 
-            // Apply scale and translate transformations
-            heading.style.transform = `scale(${scaleValue}) translateY(${translateYValue}px)`;
-
-            const fadeOutOpacity = 1 - Math.pow(scaleProgress, 2); // Ease-out effect
-            //heading.style.opacity = fadeOutOpacity;
-
-            console.log("Scale: " + scaleValue + ", Opacity: " + fadeOutOpacity);
-        }
-    });
-});
+            }
+        });
+    } else {
+        console.error('Scroll container not found. Make sure [data-scroll-container] is present in the HTML.');
+    }
+};
