@@ -1,4 +1,4 @@
-import { loadTextFile, injectContent } from "./injectText.js";
+import { switchLanguage } from './injectText.js';
 
-//Load text file & inject content
-loadTextFile('websiteText.txt', injectContent);
+switchLanguage('EN');
+

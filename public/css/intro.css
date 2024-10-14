@@ -10,16 +10,58 @@
     height: 80vh;
     justify-content: center;
     text-align: center;
-    background-color: black;
 }
 
-#intro > h1 {
-    font-size: 5vw;
-    padding: 300px;
+#headingText > h1 {
+    font-size: 4vw;
     color: white;
+    margin: 20px 50px;
+    font-family: Acumin-Bold;
 }
 
+#headingText > h1:nth-child(2) {
+}
+
+#headingText {
+    position: absolute;
+    z-index: 5;
+    top: 500px;
+    left: 300px;
+    text-align: left;
+    height: auto;
+
+    border-left: 20px solid #f78ae0;
+}
 
 .navbar-brand {
     margin: auto 40px;
 }
+
+
+#intro video {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+/* General Styling */
+#langEN, #langDE {
+    color: black;
+    font-weight: normal;
+    transition: font-weight 0.3s ease-in-out; /* Smooth transition for text weight */
+}
+.highlight {
+    font-family: Acumin-Bold;
+}
+
+/* Switch Styling */
+.form-check-input {
+    transition: all 0.4s ease-in-out; /* Smooth transition for the switch */
+}
+
+
