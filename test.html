@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Always Fixed Anime.js Scroll Animation (No Jump, Smooth Grow)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* Extend page height to allow scrolling */
+            overflow-x: hidden;
+        }
+
+        .spacer {
+            height: 100vh; /* Spacer to allow scrolling */
+        }
+
+        #animated-text {
+            font-size: 2rem;
+            background-color: coral;
+            padding: 20px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.0001); /* Start with scale(1) */
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="spacer"></div> <!-- Spacer before the animation to allow scrolling -->
+
+    <div id="animated-text">Scroll to Make Me Bigger!</div>
+
+    <div class="spacer"></div> <!-- Spacer after the animation to allow scrolling -->
+
+    <script>
+        // Get the animated text element
+        const animatedText = document.getElementById('animated-text');
+
+        // Scroll event listener
+        window.addEventListener('scroll', () => {
+            // Calculate the scroll progress as a percentage of the entire document
+            const scrollY = window.scrollY;
+            const maxScroll = document.body.scrollHeight - window.innerHeight;
+            console.log("Scroll Y: " + scrollY);
+            console.log(maxScroll);
+            // Calculate the new scale value from 1 to 3 based on scroll position
+            const scaleValue = 0.0001 + (scrollY / maxScroll) * 2;
+
+            // Apply the new transform directly to the element
+            animatedText.style.transform = `translate(-50%, -50%) scale(${scaleValue})`;
+        });
+    </script>
+</body>
+</html>

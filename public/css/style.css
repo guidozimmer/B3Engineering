@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Acumin-Regular";
-    src: url("../../AcuminPro/AcuminPro/Acumin Pro Book.otf");
+    src: url("../../AcuminPro/Acumin\ Pro\ Book.otf");
 
     
 }
@@ -26,8 +26,8 @@
 
 
 html, body {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: #1b1d1f !important;
     height: 5000px;
-    overflow-x: hidden;
+    color: #e3e4e4 !important;
 }
 

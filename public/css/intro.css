@@ -1,51 +1,14 @@
 
-
-#navbar {
-    background-color: #222;
-    color: #fff;
-}
-
-#intro {
-    margin-top: 90px;
-    height: 80vh;
-    justify-content: center;
-    text-align: center;
-}
-
-#headingText > h1 {
-    font-size: 4vw;
-    color: white;
-    margin: 20px 50px;
-    font-family: Acumin-Bold;
-}
-
-#headingText > h1:nth-child(2) {
-}
-
-#headingText {
-    position: absolute;
-    z-index: 5;
-    top: 500px;
-    left: 300px;
-    text-align: left;
-    height: auto;
-
-    border-left: 20px solid #f78ae0;
-}
-
-.navbar-brand {
-    margin: auto 40px;
-}
-
-
 #intro video {
     position: relative;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    width: 100vw;
     height: 100vh;
     object-fit: cover;
+    user-select: none;      /* Prevents text selection */
+    pointer-events: none;   /* Disables mouse interactions */
 }
+
+
 
 
 
@@ -55,13 +18,101 @@
     font-weight: normal;
     transition: font-weight 0.3s ease-in-out; /* Smooth transition for text weight */
 }
-.highlight {
-    font-family: Acumin-Bold;
-}
 
 /* Switch Styling */
 .form-check-input {
     transition: all 0.4s ease-in-out; /* Smooth transition for the switch */
 }
 
+/* Dropdown opens on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Optional: adjust to avoid any visual jump */
+}
 
+
+#intro > video {
+    height: 100vh;
+}
+
+.navbar-brand {
+    margin: auto 2vw;
+}
+
+
+
+
+
+/* Extra Small Devices (Phones, up to 480px) */
+@media only screen and (max-width: 480px) {
+
+    #intro > img {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+        width: 80vw;
+    }
+  }
+  
+  /* Small Devices (Portrait Tablets and Small Phones, up to 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    #intro > img {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+        width: 60vw;
+    }
+  }
+  
+  /* Medium Devices (Tablets in Landscape, 768px to 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #intro > img {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+        width: 35vw;
+    }
+  }
+  
+  /* Large Devices (Desktops, 1024px to 1200px) */
+  @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #intro > img {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+        width: 25vw;
+    }
+  }
+  
+  /* Extra Large Devices (Large Desktops, 1200px to 1600px) */
+  @media only screen and (min-width: 1201px) and (max-width: 1600px) {
+
+    #intro > img {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+        width: 20vw;
+    }
+  }
+  
+  /* Ultra Large Devices (Very Large Screens, 1600px and up) */
+  @media only screen and (min-width: 1601px) {
+
+    
+    #intro > img {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 15%;
+        width: 20vw;
+    }
+
+  }
+  

@@ -1,14 +1,44 @@
-whoWeAreEN = "TANTRIS is a group of construction technology innovators, architects, engineers and planners committed to developing and implementing low-cost, high-quality housing projects around the globe using innovative building design concepts together with the revolutionary flexmobox mobile precast concrete manufacturing system."
-whoWeAreDE = "TANTRIS ist eine Gruppe von Bau-Technologie-Innovatoren, Architekten, Ingenieuren und Planern, die sich der Entwicklung und Umsetzung kostengünstiger, hochwertiger Wohnungsbauprojekte auf der ganzen Welt widmen, indem sie innovative Gebäudedesignkonzepte zusammen mit dem revolutionären flexmobox mobilen Fertigbetonherstellungssystem einsetzen."
+whoWeAreHeadingEN = "Over 30 years as an innovative German solution provider"
+whoWeArePt1EN = "B3 ENGINEERING is a German developer and provider of modern, energy-efficient LED street lighting solutions. The company looks back on a history of over three decades of manufacturing and engineering expertise."
+whoWeArePt2EN = "With a strong background in metalworking, prototyping and special machine production, B3 ENGINEERING has shifted its focus to the engineering design and development of all kinds of LED street lighting and control systems – from small scale bespoke solutions to large-scale serial projects."
+whoWeArePt3EN = "Today, B3 ENGINEERING develops intricately and intelligently designed, as well as fully certified lighting fixtures and modules for all kinds of applications. Our guiding principle is to provide our customers with the highest quality at competitive prices while keeping abreast of the breakneck speed of developments in LED technology."
+whoWeArePt4EN = "A key component of our lighting strategy is the development of cutting-edge IoT control systems for Smart City implementations. Whether simple dimming schemes or adaptive light management with remote sensing, advanced video monitoring solutions, electric car charging points and emergency services support, B3 ENGINEERING is your one-stop partner for the reliable integration of flexible control systems into new or existing street lighting infrastructure."
+whoWeArePt5EN = "B3 ENGINEERING is a respected name in the industry and a reliable partner for well-known brands, architects and lighting designers."
 
 
-whatWeDoEN = "Using our construction technology and planning expertise, we facilitate the construction of quality housing while boosting economic growth to help alleviate poverty in the world’s poorest countries. Quality housing can be affordable when properly implemented. And this is what TANTRIS is all about. After all, every man, woman, and child deserves a safe and comfortable home."
-whatWeDoDE = "Mit unserer Bau-Technologie und Planungsexpertise erleichtern wir den Bau qualitätvoller Wohnhäuser und tragen gleichzeitig zum wirtschaftlichen Wachstum bei, um die Armut in den ärmsten Ländern der Welt zu lindern. Qualitätswohnen kann erschwinglich sein, wenn es richtig umgesetzt wird. Und genau darum geht es bei TANTRIS. Schließlich verdient jeder Mann, jede Frau und jedes Kind ein sicheres und komfortables Zuhause."
+whatWeDoHeadingEN = "Development and production of custom lighting solutions"
+whatWeDoPt1EN = "Tailor-made products for diverse application domains developed in close colaboration with our customers are a cornerstone of the B3 Engineering offering."
+whatWeDoPt2EN = "In a dialogue with our customers, we determine their precise needs and requirements and ascertain the available budgetary framework. In general, we can then design a custom-tailored solution based on our line of modular systems – adapting the respective model to the customers’ needs."
+whatWeDoPt3EN = "The top priority of B3 Engineering is always to meet and surpass our customers' demands by providing a high quality, custom end product at a fair price."
+whatWeDoPt4EN = "We have a wide array of variable standard components, including:"
+whatWeDoPt5EN = "    LED chips from various respected manufacturers
+    Light temperature range from 2.000 to 6.500 Kelvin
+    Drivers from almost all major manufacturers with different technical characteristics, such as dimming, freely programmable dimming times, DALI, 0-10V, etc.
+    Various lenses with different properties
+    Surge protection
+    Power cut off
+    Wide range of housing colors, including RAL
+    Control system for modern, high-tech Smart City solutions
+    Motion detectors
+    Light sensors
+    Photocell for automatically switching lights on and off
+    Temperature monitoring"
+whatWeDoPt6EN = "These are just a few of our standard modular variations. With our solid engineering background, it goes without saying that we can develop and produce most any kind of special solution."
+whatWeDoPt7EN = "B3 Engineering looks back on a rich history of innovative solutions for streets, highways, sidewalks, parking areas and public spaces."
+whatWeDoPt8EN = "Functionality, suitability for everyday use, ease of maintenance, longevity and quality are always a priority in the development and production of our products."
 
 
-howWeDoItEN = "At TANTRIS, we invest heavily in research and development to continuously make our products and services even better. Innovative products, pioneering design strategies and fresh project development approaches demonstrate the forward-thinking attitude of the TANTRIS team. TANTRIS cultivates strong relationships and networks around the world to garner the expertise and resources required to execute housing projects locally. We work closely with governments and private partners in the regions in which our projects are located. This creates valuable jobs for local populations and strengthens regional economies while injecting fresh technology, skills and know-how into the target countries. Our experts create a climate that motivates all participants, giving them confidence in the stability of their project. And best of all, our participatory design approach ensures maximum knowledge transfer and long-term project sustainability."
-howWeDoItDE = "Bei TANTRIS investieren wir stark in Forschung und Entwicklung, um unsere Produkte und Dienstleistungen kontinuierlich zu verbessern. Innovative Produkte, wegweisende Designstrategien und neue Projektentwicklungskonzepte zeigen die zukunftsorientierte Haltung des TANTRIS-Teams. TANTRIS pflegt starke Beziehungen und Netzwerke auf der ganzen Welt, um das Fachwissen und die Ressourcen zu sammeln, die erforderlich sind, um Wohnprojekte vor Ort durchzuführen. Wir arbeiten eng mit Regierungen und privaten Partnern in den Regionen zusammen, in denen unsere Projekte angesiedelt sind. Dies schafft wertvolle Arbeitsplätze für die lokale Bevölkerung und stärkt die regionale Wirtschaft, während neue Technologien, Fähigkeiten und Know-how in die Zielländer eingebracht werden. Unsere Experten schaffen ein Klima, das alle Beteiligten motiviert und ihnen Vertrauen in die Stabilität ihres Projekts gibt. Und das Beste daran: Unser partizipativer Designansatz sorgt für maximalen Wissenstransfer und langfristige Nachhaltigkeit des Projekts."
+howWeDoItHeadingEN = "B3 Smart City CITY control system"
+howWeDoItPt1EN = "Intelligent lighting solution for all listed street lights optionally available. Available are a variety of tools such as light or motion sensors, programmable dimming modules, and light management systems with every conceivable energy saving and system monitoring function."
+howWeDoItPt2EN = "All of our street and park lights can be optionally equipped with our Smart City control system. In addition to realizing energy savings of up to 35 % through intelligent dimming, myriad other functions improve the quality of light and life in your city. Groups of street lights can be linked into mesh or tree topologies using a variety of communication technologies, including RF, LoRa and PLC. Data concentrators allow you to easily and comfortably manage all Smart City functions remotely from a central control room via RF or GSM / GPRS / 3G."
+howWeDoItPt3EN = "Key features of the B3 Smart City control system include:"
+howWeDoItPt4EN = "    On/off control
+    Dimming control
+    Timed control
+    Consumption monitoring
+    Data Storage
+    Group management
+    Fault alerts
+    Status inquiry"
+howWeDoItPt5EN = "Please contact us for more information on how our intelligent control systems can improve the quality of light and life in your city. Our specialists look forward to advising you in a personal conversation. "
 
-
-whyWeDoItEN = "In our vision of the future, communities should comprise not just houses, but safe and healthy living environments. Homes must be built to a good standard of quality and be safe against the elements and forces of nature – from storms and earthquakes to fire and floods. The towns we envision will be sustainable and self-reliant while providing secure and thriving neighborhoods for families and children. Social housing is affordable housing: A key function of social housing is to provide accommodation that is affordable to people on low incomes. Our mission is to build good quality, affordable homes and respectable neighborhoods where people can live, work and play safely. We work hard every day to facilitate the rapid implementation of affordable, future-oriented living communities using local resources and local manpower while transferring know-how to give people hope and empower them to shape their own future."
-whyWeDoItDE = "In unserer Vision der Zukunft sollen Gemeinschaften nicht nur aus Häusern bestehen, sondern aus sicheren und gesunden Lebensumfeldern. Häuser müssen in guter Qualität gebaut werden und sicher vor den Elementen und Naturkräften sein – von Stürmen und Erdbeben bis hin zu Bränden und Überschwemmungen. Die Städte, die wir uns vorstellen, werden nachhaltig und selbstständig sein und gleichzeitig sichere und gedeihende Nachbarschaften für Familien und Kinder bieten. Sozialer Wohnungsbau ist bezahlbarer Wohnungsbau: Eine Hauptfunktion des sozialen Wohnungsbaus besteht darin, Menschen mit geringem Einkommen erschwinglichen Wohnraum zu bieten. Unsere Mission ist es, qualitativ hochwertige, erschwingliche Wohnungen und respektable Nachbarschaften zu bauen, in denen Menschen sicher leben, arbeiten und spielen können. Wir arbeiten jeden Tag hart daran, die schnelle Umsetzung von erschwinglichen, zukunftsorientierten Lebensgemeinschaften unter Nutzung lokaler Ressourcen und lokaler Arbeitskräfte zu erleichtern und gleichzeitig Know-how zu übertragen, um den Menschen Hoffnung zu geben und sie zu befähigen, ihre eigene Zukunft zu gestalten."
